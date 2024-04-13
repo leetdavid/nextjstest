@@ -1,3 +1,24 @@
+
+# next.js bug?
+
+Running `pnpm lint` will cause the cli to hang with the following:
+```shell
+╰─ pnpm lint
+
+> nextjstest@0.1.0 lint /home/david/developer/test/nextjstest
+> next lint
+
+? How would you like to configure ESLint? https://nextjs.org/docs/basic-features/eslint
+❯  Strict (recommended)
+   Base
+   Cancel
+```
+
+I renamed the `.eslintrc.json` file to `eslint.config.js` and the above happens.
+
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
